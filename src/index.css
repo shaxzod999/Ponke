@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Sriracha", serif;
+  font-style: normal;
+}
+
+.container-xl {
+  max-width: 1600px !important;
+  margin: 0 auto;
+}
+.font-mono {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bg-skin {
+  background-color: rgb(243 198 132);
+}
+.bg-orange1 {
+  background-color: rgb(255 176 0);
+}
+.border-yellow {
+  border: rgb(255 176 0);
+}
+.text-orange1 {
+  color: rgb(255 176 0);
+}
+.font-family-bold {
+  font-family: "Sriracha", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.text-red {
+  color: red;
+}
+.bg-red {
+  background: red;
+}
+.text-black1 {
+  color: black;
+}
+.text-white1 {
+  color: white;
+}
+.p5 {
+  padding: 20px;
+}
+.bg-green {
+  background: rgb(62 103 26);
+}
+.gradient {
+  background: #0000 linear-gradient(90deg, #ffb000 30%, #fbcb4f) 0 0 no-repeat
+    padding-box;
+}
+.font-proper{
+  color: #744302;
+}
+.bg-pov {
+  min-height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://www.ponke.xyz/img/pov.gif");
+}
+.bg-img {
+  width: 100%;
+  background-image: url("https://www.ponke.xyz/images/rays.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9999;
+}
+.pt1 {
+  padding-top: 100px;
+}
+.pb1 {
+  padding-bottom: 100px;
+}
+.pb2 {
+  padding-bottom: 100px !important;
+}
+.p-24 {
+  padding: 24px;
+}
+.mx-auto {
+  margin: 0 auto !important;
+}
+.px-5 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mb1 {
+  margin-bottom: 30px;
+}
+.mb200 {
+  margin-bottom: 200px;
+}
+.marquee-container {
+  width: 100%;
+  overflow: hidden; /* Tashqaridagi qismini yashirish */
+  white-space: nowrap; /* Matnni bir qator qilish */
+  display: flex; /* Takrorlanuvchi qismlarni yonma-yon qo'yish */
+}
+.marquee {
+  display: inline-block;
+  animation: scroll-left 10s linear infinite; /* Animatsiya 10s davom etadi */
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .mb200 {
+    margin-bottom: 40px !important;
+  }
+  .pb1 {
+    padding-bottom: 0px !important;
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0); /* Boshlanish nuqtasi */
+  }
+  to {
+    transform: translateX(-100%); /* O'ngdan chapga o'girilib chiqib ketadi */
+  }
+}
